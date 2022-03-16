@@ -27,6 +27,10 @@ namespace Create_Tabel
                 Console.WriteLine("Oops, sepertinya ada yang salah,"+e);
                 Console.ReadKey();
             }
+            finally
+            {
+                con.Close();
+            }
         }
         static void Main(string[] args)
         {
