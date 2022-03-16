@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace Create_Tabel
 {
-    internal class Program
+    class Program
     {
+        public void CreateTable()
+        {
+            SqlConnection con = null;
+        }
         static void Main(string[] args)
         {
         }
