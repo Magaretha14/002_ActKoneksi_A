@@ -17,7 +17,11 @@ namespace Create_Tabel
                 con = new SqlConnection("data source=LAPTOP-N3UNMQ7P;database=ProdiTI;Integrated Security = TRUE");
                 con.Open();
 
-                
+                SqlCommand cm = new SqlCommand("create table Mahasiswa_Coba (NIM char(12) not null primary key, Nama varchar(50), Alamat varchar(255), Jenis_Kelamin char(1))", con);
+                cm.ExecuteNonQuery();
+
+                Console.WriteLine("Tabel sukses dibuat!");
+                Console.ReadKey();
             }
         }
         static void Main(string[] args)
