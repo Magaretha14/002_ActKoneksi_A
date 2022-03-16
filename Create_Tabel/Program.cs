@@ -12,6 +12,13 @@ namespace Create_Tabel
         public void CreateTable()
         {
             SqlConnection con = null;
+            try
+            {
+                con = new SqlConnection("data source=LAPTOP-N3UNMQ7P;database=ProdiTI;Integrated Security = TRUE");
+                con.Open();
+
+                
+            }
         }
         static void Main(string[] args)
         {
