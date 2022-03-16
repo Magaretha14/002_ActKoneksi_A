@@ -22,6 +22,10 @@ namespace Create_Tabel
 
                 Console.WriteLine("Tabel sukses dibuat!");
                 Console.ReadKey();
+            }catch (Exception e)
+            {
+                Console.WriteLine("Oops, sepertinya ada yang salah,"+e);
+                Console.ReadKey();
             }
         }
         static void Main(string[] args)
